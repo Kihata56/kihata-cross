@@ -5,7 +5,8 @@
     .home-top__menu__profile
       PROFILE
     .home-top__menu__login
-      LOGIN
+      = link_to edit_user_path(current_user) do
+        LOGIN
     .home-top__menu__favorite
       FAVORITE
     .home-top__menu__search
